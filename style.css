@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 70.78%;
+    background-color: black;
+}
+
+.app {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
+.container {
+    margin: 4rem 0;
+    width: 98%;
+    max-width: 600px;  
+}
+
+.container h1 {
+    color: #fff;
+    font-size: 6rem;
+}
+
+.container h1 span {
+    color: red;
+}
+
+.inputbox {
+    margin: 4rem 0;
+    background-color: rgba(100, 100, 100, 0.5);
+    padding: 4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.inputbox input {
+    flex: 1;
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: bold;
+    position: relative;
+}
+
+.inputbox input:focus {
+    outline: none;
+    border: none;
+}
+
+.inputbox button {
+    padding: 1.6rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(3, 163, 3);
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.inputbox input::-webkit-calendar-picker-indicator {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+}
+
+#details {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+#details span {
+    color: red;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container h1 {
+        color: #fff;
+        font-size: 3rem;
+    }
+    .inputbox {
+        padding: 3rem;
+    }
+    
+    .inputbox input {
+        padding: 1.5rem;
+    }
+
+    .inputbox input::-webkit-calendar-picker-indicator {
+        background-size: 20px;
+    }
+    #details {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    
+    
+}
